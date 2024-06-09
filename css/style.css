@@ -101,3 +101,6 @@ form {
 .output button {
     margin-left: auto;
 }
+.output:not(:last-of-type) {
+    margin-bottom: 20px;
+}
