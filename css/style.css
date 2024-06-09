@@ -1,5 +1,103 @@
-* {
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Colors */
+:root {
+    --color-white: #FFFFFF;
+    --color-main: #4F518C;
+    --color-second: #2C2A4A;
+  }
+
+/* CSS */
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: var(--color-white);
+}
+
+h1, h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--color-main);
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    padding: 15px 35px ;
+    background: var(--color-second);
+    border-radius: 20px;
+    color: var(--color-white);
+    margin: 40px 0 20px 0;
+    display: inline-block;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    color: var(--color-second);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-main);
+    padding: 50px 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.input-container p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.input-container input {
+    width: 100%;
+    color: var(--color-second);
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Output Container */
+
+.output-container {
+    max-width: 500px;
+    width: 100%;
+}
+.output {
+    background: var(--color-main);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.output button {
+    margin-left: auto;
 }
